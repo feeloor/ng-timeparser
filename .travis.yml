@@ -7,10 +7,18 @@ branches:
     - master
 
 before_script:
-  - npm install -g @angular/cli
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq xvfb gtk2-engines-pixbuf xfonts-cyrillic xfonts-100dpi xfonts-75dpi xfonts-base xfonts-scalable
+
+before_script:
+  - "export DISPLAY=:99.0"
+  - "Xvfb -ac :99 -screen 0 1280x1024x16 &"
+  - sleep 3 # give xvfb some time to start
+
+addons:
+  - firefox: "45.0.2"
 
 script:
-  - ng build --prod
   - npm run test-once
 
 notifications:
