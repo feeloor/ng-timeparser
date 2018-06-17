@@ -53,7 +53,7 @@ constructor(private timeParserService: TimeParserService) {}
 this.time = this.timeParserService.parseTime(this.time, false);
 ```
 
-***12 hour format***
+***24 hour format***
 ```typescript  
 this.time = this.timeParserService.parseTime(this.time, true);
 ```
