@@ -1,0 +1,19 @@
+<div>
+  <h1>NgTimeParser</h1>
+  <div class="form-group">
+    <b>Parsed using directive on input-field: {{ inputTime }}</b><br>
+    <input type="text" [(ngModel)]="inputTime" timeParser />
+  </div>
+  <div class="form-group">
+    <b>Parsed using directive on input-field (24 hour): {{ inputTimeMilitary }}</b><br>
+    <input type="text" [(ngModel)]="inputTimeMilitary" timeParser militaryTime='true' />
+  </div>
+  <div class="form-group">
+    <b>Parsed using service: {{ inputTimeService }}</b><br>
+    <input type="text" [(ngModel)]="inputTimeService" (blur)="parseTime('inputTimeService')"/>
+  </div>
+  <div class="form-group">
+    <b>Parsed using service (24 hour): {{ inputTimeServiceMilitary }}</b><br>
+    <input type="text" [(ngModel)]="inputTimeServiceMilitary" (blur)="parseTime('inputTimeServiceMilitary', true)" />
+  </div>
+</div>
