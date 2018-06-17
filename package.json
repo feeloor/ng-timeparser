@@ -1,7 +1,8 @@
 {
   "name": "ng-timeparser",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
+  "author": "Felix Khoi",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,10 +10,20 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "packagr": "ng-packagr -p ng-package.json"
+    "packagr": "ng-packagr -p ng-package.json",
+    "test-once": "npm run build && karma start karma.conf.js --single-run"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feeloor/ng-timeparser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/feeloor/ng-timeparser/issues"
+  },
+  "homepage": "https://github.com/feeloor/ng-timeparser#readme",
   "private": false,
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "@angular/animations": "^5.2.0",
     "@angular/common": "^5.2.0",
     "@angular/compiler": "^5.2.0",
@@ -24,9 +35,7 @@
     "@angular/router": "^5.2.0",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.6",
-    "zone.js": "^0.8.19"
-  },
-  "devDependencies": {
+    "zone.js": "^0.8.19",
     "@angular/cli": "~1.7.4",
     "@angular/compiler-cli": "^5.2.0",
     "@angular/language-service": "^5.2.0",

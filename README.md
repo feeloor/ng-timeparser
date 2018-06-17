@@ -1,10 +1,29 @@
 # NgTimeparser
 
+[![npm version](https://badge.fury.io/js/ng-timeparser.svg)](https://badge.fury.io/js/ng-timeparser)
+
 NgTimeparser is a Angular 5 service that helps you parse any time from a input field to a correct time.
 It can handle both 12/24 hour formats.
 
 ## Install
 
+***Install from npm***
+```
+npm i ng-timeparser
+```
+
+***Include in NgModule***
+
+```typescript
+@NgModule({
+  declarations: [
+    ...
+  ],
+  imports: [
+    ...
+    TimeParserModule
+  ]
+```
 
 ## Usage
 

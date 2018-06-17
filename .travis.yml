@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - '10.4.1'
+
+branches:
+  only:
+    - master
+
+before_script:
+  - npm install -g @angular/cli
+
+script:
+  - ng build --prod
+  - npm run test-once
+
+notifications:
+  email:
+    on_failure: change
+    on_success: change
