@@ -1,8 +1,8 @@
 {
   "name": "ng-timeparser",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
-  "author": "Felix Khoi",
+  "author": "Felix Khoi <felix@khoi.se>",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -13,6 +13,13 @@
     "packagr": "ng-packagr -p ng-package.json",
     "test-once": "npm run build && karma start karma.conf.js --single-run"
   },
+  "keywords": [
+    "angular",
+    "timeparser",
+    "time",
+    "clock",
+    "@feeloor"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/feeloor/ng-timeparser.git"
